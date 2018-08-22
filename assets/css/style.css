@@ -1,0 +1,24 @@
+/*universal selector - default settings unles maoverize sa ilalim*/
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+	color: #191919; /*off-black*/
+}
+
+#targeted {
+	font-size: 3em;
+}
+
+/*class selector*/
+.head {
+	background-color: #1e93db; /*blue*/
+}
+
+/*attribute selector*/
+a[target] {
+	text-decoration: none;
+}

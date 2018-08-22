@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta	http-equiv="X-UA-Compatible" content="IE=Edge">
+
+	<title>Mod02-05: Intro to CSS</title>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+	<style type="text/css">
+		/*adjacent sibling selector*/
+		div + p {
+			background-color: #191919;
+			color: #fff;
+		}
+
+		/*general sibling selector*/
+		div ~ p {
+			background-color: yellow;
+		}
+
+		/*child selectors*/
+		div > p {
+			letter-spacing: 3em;
+		}
+
+		/*child selector won't affect grandchild*/
+		ul > li {
+			font-size: 3em;
+		}
+
+		/*decendant selector*/
+
+		ul li {
+			font-size: 3em;
+		}
+	</style>
+
+</head>
+<body>
+
+	<div class="head">
+		<p>target</p>	
+		<h1>This is an Introduction to CSS</h1>	
+		<a href="https://google.com">CSS BASICS</a>
+		<a href="index2.html">Page2</a>
+		<span><p>im inside a span</p></span>
+	</div>
+
+	<p id="targeted">I will be targeted instead</p>
+	<a href="#">GREEN</a>
+	<a href="https://google.com">Google</a>
+	<a href="https://google.com" target="_blank">Google 2</a>
+
+
+	<!-- inline style -->
+	<h3 style="text-align: center; color: red;"> Inline Style</h3>
+	<h3> Without Inline style</h3> 
+
+	<!-- adjacent sibling selector -->
+	
+	<div>
+		<h2>new div</h2>
+	</div>
+	<p>i'm adjacent to the div</p>
+	<p>i'm not adjacent to the div</p>
+
+	<ul>
+		<li>text</li>
+		<li>text</li>
+			<ol>
+				<li>text also</li>
+				<li>text also</li>
+			</ol>
+	</ul>
+
+</body>
+</html>
