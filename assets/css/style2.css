@@ -1,0 +1,28 @@
+a:link {
+	color: #ff0000;
+}
+
+a:visited {
+	color: yellow;
+}
+
+a:focus {
+	color: green;
+}
+
+/*mas mababa compared to visited and focused kaya sya ang masusunod*/
+a:active {
+	color: pink;
+}
+
+input:focus {
+	background-color: red;
+}
+
+input:active {
+	background-color: blue
+}
+
+a:hover {
+	font-size: 10px;
+}
